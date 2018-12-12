@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>segun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<body>
+    <div class="container" style="width:70%; margin:auto;">
+
+        <form id="commentForm" method="get" action="" class="form-horizontal" style="background:rgb(236, 235, 232); padding:30px;">
+            <div id="rootwizard">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#tab1" data-toggle="tab" style=>Personal Information</a>
+                        </li>
+                        <li>
+                            <a href="#tab2" data-toggle="tab">Course</a>
+                        </li>
+                        <li>
+                            <a href="#tab3" data-toggle="tab">Success</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+
+                    <div class="tab-pane" id="tab1">
+
+                        <div class="control-group" style="padding-top:20px; padding-left:20px;">
+                            <label class="control-label" for="first">FirstName</label>
+                            <div class="controls">
+                                <input type="text" id="emailfield" name="firstname" style="width:200px;">
+                            </div>
+                        </div>
+
+
+                        <div class="control-group" style="padding-top:20px; padding-left:20px; ">
+                            <label class="control-label" for="name">LastName</label>
+                            <div class="controls">
+                                <input type="text" id="namefield" name="lastname" style="width:200px;">
+                            </div>
+                        </div>
+
+                        <div class="control-group" style="padding-top:20px; padding-left:20px; ">
+                            <label class="control-label" for="name">E-mail</label>
+                            <div class="controls">
+                                <input type="text" id="mailfield" name="email" style="width:200px;">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group" style="padding-left:30px; padding-top:20px;">
+                                    <label for="comment">Address:</label>
+                                    <textarea name="address" class="form-control" rows="3" id="comment"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane" id="tab2">
+
+                        <div class="row" style="padding-left:20px;">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                <label style="padding-top:25px;">Matric Number:</label>
+                                <br>
+                                <input type="text" name="number" class="but" placeholder="Matric Number">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                <label style="padding-top:25px;">Course Code:</label>
+                                <br>
+                                <input type="text" name="title" class="but" placeholder="Course Code">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row" style="padding-left:20px;">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                <label style="padding-top:25px;">Department:</label>
+                                <br>
+                                <input type="text" name="deparment" class="but" placeholder="Department">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                <label style="padding-top:25px;">Faculty:</label>
+                                <br>
+                                <input type="text" name="faculty" class="but" placeholder="Faculty">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row" style="padding-top:20px;padding-left:20px;">
+                            <div class="col-lg-12 col-md-8 col-sm-8">
+                                <h4>Which course are you applying for?</h4>
+                            </div>
+                            <div class="col-lg-3 col-md-8 col-sm-8">
+                                <label>
+                                    <input type="checkbox" name="course">&nbsp;Mathematics</label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="course">&nbsp;Chemistry</label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="course">&nbsp;Biology</label>
+                            </div>
+
+
+
+                            
+                        </div>
+
+                        <!-- <div class="control-group" style="padding-left:20px; padding-top:30px;">
+                            <label class="control-label" for="url">URL</label>
+                            <div class="controls">
+                                <input type="text" id="urlfield" name="urlfield" class="required url">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="tab-pane" id="tab3">
+                        <div class="row" style="padding-top:100px; text-align:center;color:rgb(57, 106, 212);">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <h1>Your account is successfully completed!!!</h1>
+                                <p>Your registration is complete the next step is to activate your account from your mail and
+                                    click the finish button below.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="pager wizard">
+                        <li class="previous first" style="display:none;">
+                            <a href="#">First</a>
+                        </li>
+                        <li class="previous">
+                            <a href="#">Previous</a>
+                        </li>
+                        <li class="next last" style="display:none;">
+                            <a href="#">Last</a>
+                        </li>
+                        <li class="next">
+                            <a href="#">Next</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery.validate.min.js"></script>
+    <script src="jquery.bootstrap.wizard.js"></script>
+    <script>
+
+        $(function () {
+           
+            $('#rootwizard').bootstrapWizard({
+                'tabClass': 'nav nav-pills',
+                'onNext': function (tab, navigation, index) {
+                    var $valid = $("#commentForm").valid();
+                    if (!$valid) {
+                        $validator.focusInvalid();
+                        return false;
+                    }
+                }
+            });
+
+
+             $("#commentForm").validate({
+                rules: {
+                    firstname: {
+                        required: true,
+
+                    },
+                    lastname: {
+                        required: true,
+                    },
+
+                    email: {
+                        required: true,
+                        email: true,
+                        minlength: 3
+                    },
+
+                    address: {
+                        required: true,
+                    },
+
+                    // urlfield: {
+                    //     required: true,
+                    //     minlength: 3,
+                    //     url: true
+                    // },
+
+                    number: {
+                        required: true,
+                        number: true
+                    },
+                    title: {
+                        required: true,
+                        title: true
+                    },
+
+                    deparment: {
+                        required: true,
+                        deparment: true
+                    },
+
+                    faculty: {
+                        required: true,
+                        faculty: true
+                    },
+                }
+            });
+
+
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
